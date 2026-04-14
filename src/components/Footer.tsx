@@ -1,6 +1,7 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, Youtube, Heart } from 'lucide-react';
 import { CLINIC_NAME } from '../constants';
+import logo from "../assets/dark-logo.png";
 
 export const Footer = () => {
   return (
@@ -10,11 +11,9 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-                <img 
-                    src="/src/assets/dark-logo.png" 
-                    alt="Dr. LB Dental Logo" 
-                    className="w-20 h-20 object-contain"
-                />
+                import logo from "../assets/light-logo.png";
+
+<img src={logo} alt="Dr. LB Dental Logo" className="w-20 h-20 object-contain" />
                 <span className="text-2xl font-bold text-white">{CLINIC_NAME}</span>
                 </div>
             <p className="text-slate-400 leading-relaxed">

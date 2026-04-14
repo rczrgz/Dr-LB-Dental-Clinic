@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from "../assets/light-logo.png";
 
 interface NavbarProps {
   onBookNow: () => void;
@@ -36,11 +37,7 @@ export const Navbar = ({ onBookNow }: NavbarProps) => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#home" className="text-2xl font-bold text-teal-primary flex items-center gap-2">
-  <img 
-    src="/src/assets/light-logo.png" 
-    alt="Dr. LB Dental Logo" 
-    className="w-20 h-20 object-contain"
-  />
+  <img src={logo} alt="Dr. LB Dental Logo" className="w-20 h-20 object-contain" />
   <span className="hidden sm:block">Dr. LB Dental</span>
 </a>
           </div>
