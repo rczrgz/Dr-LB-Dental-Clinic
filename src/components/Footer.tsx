@@ -11,7 +11,6 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-                import logo from "../assets/light-logo.png";
 
 <img src={logo} alt="Dr. LB Dental Logo" className="w-20 h-20 object-contain" />
                 <span className="text-2xl font-bold text-white">{CLINIC_NAME}</span>
