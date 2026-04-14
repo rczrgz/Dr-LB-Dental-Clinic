@@ -35,7 +35,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-teal-primary uppercase bg-teal-soft rounded-full">
+            <span className="inline-block mt-4 px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-teal-primary uppercase bg-teal-soft rounded-full">
               Premium Dental Care
             </span>
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-tight mb-6">
