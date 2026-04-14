@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send, Phone, Bot, User } from 'lucide-react';
+import logo from "../assets/light-logo.png";
 
 const BRANCHES = [
   { name: 'Amang Rodriguez', area: 'Pasig', numbers: ['0917 123 4567'] },
@@ -134,11 +135,14 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
           >
             {/* Header */}
             <div className="bg-teal-primary p-3 text-white flex items-center gap-3">
-              <div className="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                {mode === 'human' ? <Phone size={16} /> : <MessageCircle size={16} />}
-              </div>
+             <div className="w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-white p-1">
+  <img src={logo} alt="Dr. LB" className="w-full h-full object-contain" />
+</div>
               <div className="min-w-0">
-                <p className="font-bold text-sm">Dr. LB Assistant</p>
+                <div className="flex items-center gap-1.5">
+  <p className="font-bold text-sm">Dr. LB Assistant</p>
+  <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+</div>
                 <p className="text-xs opacity-80 truncate">
                   {mode === 'human' ? '📞 Branch contacts' : '🦷 Powered by AI • Usually replies instantly'}
                 </p>
