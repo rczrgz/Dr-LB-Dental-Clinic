@@ -58,7 +58,7 @@ export const Hero = () => {
             </div>
           </motion.div>
 
-          <motion.div 
+          {/* <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
@@ -80,7 +80,7 @@ export const Hero = () => {
                 {'★'.repeat(5)}
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
