@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="bg-slate-900 text-slate-300 pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-12 mb-16">
           {/* Brand */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
@@ -61,7 +61,7 @@ export const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          {/* <div>
             <h4 className="text-white font-bold text-lg mb-6">Newsletter</h4>
             <p className="text-slate-400 mb-6">Subscribe to get the latest dental tips and offers.</p>
             <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
@@ -74,7 +74,7 @@ export const Footer = () => {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
         <div className="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-500">

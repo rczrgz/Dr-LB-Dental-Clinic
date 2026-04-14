@@ -119,7 +119,7 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={handleOpen}
-        className="fixed bottom-6 right-4 sm:bottom-8 sm:right-8 z-40 bg-teal-primary text-white p-3 sm:p-4 rounded-full shadow-2xl hover:bg-teal-dark transition-colors"
+        className="fixed bottom-6 right-4 sm:bottom-8 sm:right-8 z-[9999] bg-teal-primary text-white p-3 sm:p-4 rounded-full shadow-2xl hover:bg-teal-dark transition-colors"
       >
         {isOpen ? <X size={26} /> : <MessageCircle size={26} />}
       </motion.button>
@@ -130,7 +130,7 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-28 right-4 sm:right-8 z-40 bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100 w-[calc(100vw-2rem)] max-w-sm"
+            className="fixed bottom-28 right-4 sm:right-8 z-[9999] bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100 w-[calc(100vw-2rem)] max-w-sm"
           >
             {/* Header */}
             <div className="bg-teal-primary p-3 text-white flex items-center gap-3">
