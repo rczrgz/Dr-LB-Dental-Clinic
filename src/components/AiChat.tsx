@@ -1,15 +1,15 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send, Phone, Bot, User } from 'lucide-react';
 import logo from "../assets/light-logo.png";
 
 const BRANCHES = [
-  { name: 'Amang Rodriguez', area: 'Pasig', numbers: ['0917 123 4567'] },
-  { name: 'Pasig Blvd', area: 'Pasig', numbers: ['0917 234 5678'] },
+  { name: 'Amang Rodriguez', area: 'Pasig', numbers: ['0917 186 1314'] },
+  { name: 'Pasig Blvd', area: 'Pasig', numbers: ['0917 102 5905'] },
   { name: 'Mandaluyong', area: 'Mandaluyong', numbers: ['0917 345 6789'] },
   { name: 'Congressional Ave', area: 'Quezon City', numbers: ['0917 456 7890'] },
   { name: 'Regalado Ave Fairview', area: 'Quezon City', numbers: ['0917 567 8901'] },
-  { name: 'Malanday', area: 'Marikina', numbers: ['0917 678 9012'] },
+  { name: 'Malanday', area: 'Marikina', numbers: ['0906 581 6444'] },
   { name: 'Parang', area: 'Marikina', numbers: ['0995 466 6672', '727-516-23'] },
   { name: 'Tanauan', area: 'Batangas', numbers: ['0917 890 1234'] },
 ];
@@ -120,7 +120,7 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={handleOpen}
-        className="fixed bottom-6 right-4 sm:bottom-8 sm:right-8 z-[9999] bg-teal-primary text-white p-3 sm:p-4 rounded-full shadow-2xl hover:bg-teal-dark transition-colors"
+        className="fixed bottom-6 right-4 sm:bottom-8 sm:right-8 z-9999 bg-teal-primary text-white p-3 sm:p-4 rounded-full shadow-2xl hover:bg-teal-dark transition-colors"
       >
         {isOpen ? <X size={26} /> : <MessageCircle size={26} />}
       </motion.button>
@@ -131,11 +131,11 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-28 right-4 sm:right-8 z-[9999] bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100 w-[calc(100vw-2rem)] max-w-sm"
+            className="fixed bottom-28 right-4 sm:right-8 z-9999 bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100 w-[calc(100vw-2rem)] max-w-sm"
           >
             {/* Header */}
             <div className="bg-teal-primary p-3 text-white flex items-center gap-3">
-             <div className="w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-white p-1">
+             <div className="w-11 h-11 rounded-full overflow-hidden shrink-0 bg-white p-1">
   <img src={logo} alt="Dr. LB" className="w-full h-full object-contain" />
 </div>
               <div className="min-w-0">
@@ -147,7 +147,7 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
                   {mode === 'human' ? '📞 Branch contacts' : '🦷 Powered by AI • Usually replies instantly'}
                 </p>
               </div>
-              <div className="ml-auto flex items-center gap-1 flex-shrink-0">
+              <div className="ml-auto flex items-center gap-1 shrink-0">
                 {mode !== 'select' && (
                   <button
                     onClick={() => setMode('select')}
@@ -171,7 +171,7 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
                     onClick={() => setMode('ai')}
                     className="flex items-center gap-3 bg-white border border-slate-200 hover:border-teal-primary hover:bg-teal-50 rounded-xl p-4 transition-all text-left"
                   >
-                    <div className="w-10 h-10 bg-teal-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-teal-primary/10 rounded-full flex items-center justify-center shrink-0">
                       <Bot size={20} className="text-teal-primary" />
                     </div>
                     <div>
@@ -184,7 +184,7 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
                     onClick={() => setMode('human')}
                     className="flex items-center gap-3 bg-white border border-slate-200 hover:border-teal-primary hover:bg-teal-50 rounded-xl p-4 transition-all text-left"
                   >
-                    <div className="w-10 h-10 bg-teal-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-teal-primary/10 rounded-full flex items-center justify-center shrink-0">
                       <User size={20} className="text-teal-primary" />
                     </div>
                     <div>
@@ -203,7 +203,7 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
                   {messages.map((msg, i) => (
                     <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                       {msg.role === 'ai' && (
-                        <div className="w-7 h-7 bg-teal-primary rounded-full flex items-center justify-center text-white text-xs mr-2 mt-1 flex-shrink-0">🦷</div>
+                        <div className="w-7 h-7 bg-teal-primary rounded-full flex items-center justify-center text-white text-xs mr-2 mt-1 shrink-0">🦷</div>
                       )}
                       <div className={`max-w-[80%] px-3 py-2.5 rounded-2xl text-sm leading-relaxed ${
                         msg.role === 'user'
@@ -216,7 +216,7 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
                   ))}
                   {loading && (
                     <div className="flex justify-start items-center gap-2">
-                      <div className="w-7 h-7 bg-teal-primary rounded-full flex items-center justify-center text-white text-xs flex-shrink-0">🦷</div>
+                      <div className="w-7 h-7 bg-teal-primary rounded-full flex items-center justify-center text-white text-xs shrink-0">🦷</div>
                       <div className="bg-white px-4 py-3 rounded-2xl rounded-bl-none shadow-sm border border-slate-100">
                         <div className="flex gap-1 items-center">
                           <span className="w-2 h-2 bg-teal-primary rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
@@ -240,14 +240,13 @@ CONTACT Parang: Globe 0995 466 6672 | Landline 727-516-23
                   <button
                     onClick={sendMessage}
                     disabled={loading || !input.trim()}
-                    className="bg-teal-primary text-white p-2 rounded-xl hover:bg-teal-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
+                    className="bg-teal-primary text-white p-2 rounded-xl hover:bg-teal-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
                   >
                     <Send size={16} />
                   </button>
                 </div>
               </>
             )}
-
             {/* Branch Contacts */}
             {mode === 'human' && (
               <div className="overflow-y-auto bg-slate-50" style={{ maxHeight: '22rem' }}>
