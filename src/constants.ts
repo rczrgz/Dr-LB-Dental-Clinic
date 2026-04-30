@@ -5,51 +5,59 @@ export const CLINIC_NAME = "Dr. LB Dental Clinic";
 export const BRANCHES: Branch[] = [
   {
     id: "1",
-    name: "Main Branch - Quezon City",
-    address: "123 North Avenue, Quezon City, Metro Manila",
+    name: "Pasig Blvd, Kapitolyo Branch",
+    address: "Elements @ Rosemarie, Pasig Blvd. Kapitolyo Pasig, Pasig, Philippines",
     phone: "+63 917 123 4567",
-    facebookUrl: "https://facebook.com/drlbdentalqc",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100089088542985",
     imageUrl: "https://picsum.photos/seed/dental1/800/600"
   },
   {
     id: "2",
-    name: "Makati Branch",
-    address: "456 Ayala Avenue, Makati City, Metro Manila",
+    name: "Amang Rodriguez Ave, Pasig Branch",
+    address: "92 Eugolio Amang Rodriguez Ave, Pasig, Philippines",
     phone: "+63 917 234 5678",
-    facebookUrl: "https://facebook.com/drlbdentalmakati",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100089019756176",
     imageUrl: "https://picsum.photos/seed/dental2/800/600"
   },
   {
     id: "3",
-    name: "BGC Branch",
-    address: "789 High Street, Bonifacio Global City, Taguig",
+    name: "Regalado Ave, Fairview Branch",
+    address: "3 Regalado Avenue West Fairview, Quezon City, Philippines",
     phone: "+63 917 345 6789",
-    facebookUrl: "https://facebook.com/drlbdentalbgc",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100088640181008",
     imageUrl: "https://picsum.photos/seed/dental3/800/600"
   },
   {
     id: "4",
-    name: "Alabang Branch",
-    address: "101 Filinvest City, Alabang, Muntinlupa",
+    name: "Congressional Ave, Quezon City Branch",
+    address: "Unit 1A 2nd Floor, 652-C Congressional Avenue Extension corner Visayas Avenue, Barangay Pasong Tamo, Quezon City, Philippines",
     phone: "+63 917 456 7890",
-    facebookUrl: "https://facebook.com/drlbdentalalabang",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100064279714433",
     imageUrl: "https://picsum.photos/seed/dental4/800/600"
   },
   {
     id: "5",
-    name: "Pasig Branch",
-    address: "202 Ortigas Center, Pasig City, Metro Manila",
+    name: "Marikina – Malanday Branch",
+    address: "Unit 1B, E & J Commercial Building, 721 Jp Rizal Street, Marikina City, Philippines",
     phone: "+63 917 567 8901",
-    facebookUrl: "https://facebook.com/drlbdentalpasig",
+    facebookUrl: "https://www.facebook.com/DrLBDentalClinicMalandayMarikina",
     imageUrl: "https://picsum.photos/seed/dental5/800/600"
   },
   {
     id: "6",
-    name: "Cebu Branch",
-    address: "303 IT Park, Lahug, Cebu City",
+    name: "Parang, Marikina Branch",
+    address: "BG Molina Street NGI Parang, Marikina City, Philippines",
     phone: "+63 917 678 9012",
-    facebookUrl: "https://facebook.com/drlbdentalcebu",
+    facebookUrl: "https://www.facebook.com/DrLBDentalParang",
     imageUrl: "https://picsum.photos/seed/dental6/800/600"
+  },
+  {
+    id: "7",
+    name: "Tanauan Branch",
+    address: "RegaOne Building, Tanauan",
+    phone: "+63 917 789 0123",
+    facebookUrl: "https://www.facebook.com/LibuitBirungDentalClinic",
+    imageUrl: "https://picsum.photos/seed/dental7/800/600"
   }
 ];
 
